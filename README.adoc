@@ -43,6 +43,7 @@ make installkernel KERNCONF=NEWKERNEL
 ....
 
 ### Kernel command!
+`Google: freebsd kernel module hello world`
 ....
 kldstat
 make
