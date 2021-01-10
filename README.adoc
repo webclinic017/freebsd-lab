@@ -41,3 +41,12 @@ make buildkernel KERNCONF=NEWKERNEL
 # install!
 make installkernel KERNCONF=NEWKERNEL
 ....
+
+### Kernel command!
+....
+kldstat
+make
+make load
+make unload
+make clean
+....
