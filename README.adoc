@@ -1,5 +1,14 @@
 # Hello FreeBSD
 
+### Build the documentation
+You don’t need to depend on GitHub.
+
+For a quick and dirty build, install Asciidoctor however you like and build:
+prereq: `pkg install asciidoc xdg-utils`
+....
+make doc
+....
+
 ## Hello, world
 howto start and basic question
 - https://www.reddit.com/r/freebsd/comments/i7nsv1/what_is_the_best_way_to_hack_kernel/
@@ -20,3 +29,32 @@ https://forums.freebsd.org/threads/where-is-official-online-source-code-for-free
 
 ###### FreeBDD workflow
 - https://stackoverflow.com/questions/49656395/how-to-boot-freebsd-image-under-qemu
+
+
+### Move to bash shell
+....
+pkg install bash
+chsh -s /usr/local/bin/bash root
+#logout
+echo $SHELL
+....
+https://serverfault.com/a/228512[[link]]
+
+### compile the kernel
+....
+# download the kernel
+sudo svn co --trust-server-cert --non-interactive https://svn0.us-east.freebsd.org/base/stable/11/ /usr/src
+# first take backup
+cp -Rp /boot/kernel/ /boot/kernel.backup
+# determine ur arch
+uname -a
+# in my case amd64
+cd /usr/src/sys/amd64/conf/
+# copy kenel .config
+cp GENERIC NEWKERNEL
+# compile!
+cd /usr/src
+make buildkernel KERNCONF=NEWKERNEL
+# install!
+make installkernel KERNCONF=NEWKERNEL
+....

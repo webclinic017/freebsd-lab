@@ -6,5 +6,5 @@ all:
 
 # Build your own doc!
 doc:
-	asciidoctor README.adoc -o index.html
+	asciidoc -o index.html README.adoc
 	xdg-open index.html
