@@ -4,7 +4,7 @@
 You don’t need to depend on GitHub.
 
 For a quick and dirty build, install Asciidoctor however you like and build:
-prereq: `pkg install asciidoc xdg-utils`
+`pkg install asciidoc xdg-utils`
 ....
 make doc
 ....
