@@ -6,3 +6,13 @@ pkg install -y base firefox asciidoc firefox-esr xdg-utils git vim python
 ....
 gnome
 ....
+
+#### lsblk
+I disovered this amazing command while installing arch linux.
+
+this is very helpful specially if you want to mount like usb to dir, simple:
+`pkg lsblk`
+....
+lsblk
+mount /dev/yourdevice /yourdir
+....
