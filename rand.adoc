@@ -16,3 +16,29 @@ this is very helpful specially if you want to mount like usb to dir, simple:
 lsblk
 mount /dev/yourdevice /yourdir
 ....
+
+I mounted my USB to test/ link:[https://unix.stackexchange.com/questions/368463/cannot-mount-usb-on-freebsd-invalid-argument#comment655240_368470]
+....
+[root@freebsd ~]# lsblk
+DEVICE         MAJ:MIN SIZE TYPE                              LABEL MOUNT
+da0              0:91   50G GPT                                   - -
+  da0p1          0:92   56K freebsd-boot                 gpt/bootfs -
+  da0p2          0:93  800K efi                gptid/1336c04a-14f8-11eb-9c6b-0cc47ad8b808 -
+  da0p3          0:94  1.0G freebsd-swap                 gpt/swapfs -
+  da0p4          0:95   49G freebsd-ufs                  ufs/rootfs /
+da1              0:124 7.2G GPT                                   - -
+  <FREE>         -:-   1.0M -                                     - -
+  da1p1          0:125 7.2G ms-basic-data      gpt/Main%20Data%20Partition -
+[root@freebsd ~]# mount -t msdosfs /dev/da1p1 test/
+[root@freebsd ~]# lsblk
+DEVICE         MAJ:MIN SIZE TYPE                              LABEL MOUNT
+da0              0:91   50G GPT                                   - -
+  da0p1          0:92   56K freebsd-boot                 gpt/bootfs -
+  da0p2          0:93  800K efi                gptid/1336c04a-14f8-11eb-9c6b-0cc47ad8b808 -
+  da0p3          0:94  1.0G freebsd-swap                 gpt/swapfs -
+  da0p4          0:95   49G freebsd-ufs                  ufs/rootfs /
+da1              0:124 7.2G GPT                                   - -
+  <FREE>         -:-   1.0M -                                     - -
+  da1p1          0:125 7.2G ms-basic-data                  gpt/Main /root/test
+[root@freebsd ~]# 
+....
