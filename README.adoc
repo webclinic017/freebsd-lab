@@ -9,6 +9,11 @@ For a quick and dirty build, install Asciidoctor however you like and build:
 make doc
 ....
 
+### freebsd install gnome
+....
+Google it!
+....
+
 ### Move to bash shell
 ....
 pkg install bash
@@ -42,4 +47,14 @@ make installkernel KERNCONF=NEWKERNEL
 ....
 make c
 .userland/hello
+....
+
+### Kernel command!
+`Google: freebsd kernel module hello world`
+....
+kldstat
+make
+make load
+make unload
+make clean
 ....
