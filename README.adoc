@@ -36,3 +36,10 @@ make buildkernel KERNCONF=NEWKERNEL
 # install!
 make installkernel KERNCONF=NEWKERNEL
 ....
+
+
+### Hello world userland example
+....
+make c
+.userland/hello
+....
