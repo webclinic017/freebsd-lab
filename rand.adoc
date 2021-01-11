@@ -17,7 +17,7 @@ lsblk
 mount /dev/yourdevice /yourdir
 ....
 
-I mounted my USB to test/ link:[https://unix.stackexchange.com/questions/368463/cannot-mount-usb-on-freebsd-invalid-argument#comment655240_368470]
+I mounted my USB to test/ https://unix.stackexchange.com/questions/368463/cannot-mount-usb-on-freebsd-invalid-argument#comment655240_368470:[link]
 ....
 [root@freebsd ~]# lsblk
 DEVICE         MAJ:MIN SIZE TYPE                              LABEL MOUNT
