@@ -1,7 +1,7 @@
 
 
 
-all:
+all: doc
 	date
 
 # Build your own doc!
