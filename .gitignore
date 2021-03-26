@@ -1,1 +1,7 @@
 *.html
+*.o
+machine
+x86
+export_syms
+.depend.*
+*.ko
