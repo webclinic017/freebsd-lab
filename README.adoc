@@ -81,4 +81,7 @@ kldunload module/syscall.ko
 
 
 ### SEE ALSO
-KLD(4),
+KLD(4), copyin(9),
+#include <sys/types.h>
+#include <sys/systm.h>
+
