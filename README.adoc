@@ -58,3 +58,12 @@ make load
 make unload
 make clean
 ....
+
+### hello LKM
+How to use it:
+....
+cd hello
+make
+kldload ./hello.ko
+kldunload ./hello.ko
+....
