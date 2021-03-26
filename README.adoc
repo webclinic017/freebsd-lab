@@ -68,5 +68,17 @@ kldload ./hello.ko
 kldunload ./hello.ko
 ....
 
+### syscall LKM
+How to add your own custom syscall to FreeBSD then use it from userland
+....
+cd syscall
+make
+kldload module/syscall.ko
+./test/call
+dmesg
+kldunload module/syscall.ko
+....
+
+
 ### SEE ALSO
-KLD(4), 
+KLD(4),
