@@ -95,6 +95,15 @@ https://docs.freebsd.org/en/books/arch-handbook/driverbasics-char.html[[Referenc
 * The FreeBSD Developer’s Handbook, specifically Chapter 10
 * http://www.lemis.com/grog/Papers/Debug-tutorial/tutorial.pdf[[Debugging Kernel Problems by Greg Leh]]
 
+### mkdir hook
+....
+cd mkdir_hook/
+mkdir anything
+....
+
+
+
+
 ### SEE ALSO
 ....
 KLD(4), copyin(9), kldstat(8),
