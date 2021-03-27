@@ -79,9 +79,18 @@ dmesg
 kldunload module/syscall.ko
 ....
 
+### cdev LKM
+Simple char dev, Reference: `/usr/share/examples/kld/cdev`
+
+### echo LKM
+Another simple char dev, because "cdev LKM" not working now, and this works smoothly.
+https://docs.freebsd.org/en/books/arch-handbook/driverbasics-char.html[[Reference]]
 
 ### SEE ALSO
+....
 KLD(4), copyin(9),
-#include <sys/types.h>
-#include <sys/systm.h>
-#include <sys/conf.h>
+All $man 9
+#include <sys/types.h>,
+#include <sys/systm.h>,
+#include <sys/conf.h>,
+....
