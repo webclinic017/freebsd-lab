@@ -86,9 +86,18 @@ Simple char dev, Reference: `/usr/share/examples/kld/cdev`
 Another simple char dev, because "cdev LKM" not working now, and this works smoothly.
 https://docs.freebsd.org/en/books/arch-handbook/driverbasics-char.html[[Reference]]
 
+### Side note #1
+
+* `/usr/src/sys/` the best reference and learning tool for a newbie FreeBSD kernel hacker
+
+### Side note #2: Debugging
+
+* The FreeBSD Developer’s Handbook, specifically Chapter 10
+* http://www.lemis.com/grog/Papers/Debug-tutorial/tutorial.pdf[[Debugging Kernel Problems by Greg Leh]]
+
 ### SEE ALSO
 ....
-KLD(4), copyin(9),
+KLD(4), copyin(9), kldstat(8),
 All $man 9
 #include <sys/types.h>,
 #include <sys/systm.h>,
