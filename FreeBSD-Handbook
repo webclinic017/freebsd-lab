@@ -31,3 +31,85 @@ This chapter describes:
 - How to create groups and add users as members of a group.
 
 su(1), adduser(8), rmuser(8), chpass(1), passwd(1), pw(8)
+
+Chapter 4. Installing Applications: Packages and Ports
+======================================================
+pkg(8), pkg-search(8), pkg.conf(5), 
+
+FreeBSD ports mailing list: https://lists.freebsd.org/mailman/listinfo/freebsd-ports
+FreeBSD ports bugs mailing list: https://lists.freebsd.org/mailman/listinfo/freebsd-ports-bugs
+
+Before installing any application, check https://vuxml.freebsd.org/ for security issues related to the application or type pkg audit -F 
+to check all installed applications for known vulnerabilities.
+
+4.3. Finding Software
+---------------------
+search for ports:
+  https://www.freebsd.org/ports/
+search for packages:
+  # pkg search htop
+
+Where is the location of app htop in my system?
+  # whereis htop
+
+4.4. Using pkg for Binary Package Management
+--------------------------------------------
+~"Since pkg only works with binary packages, it is not a replacement for such tools. 
+Those tools can be used to install software from both binary packages and the Ports Collection, 
+while pkg installs only binary packages."
+
+# man pkg-install
+
+4.4.2. Quarterly and Latest Ports Branches
+------------------------------------------
+Skipped!
+
+4.4.3. Obtaining Information About Installed Packages
+-----------------------------------------------------
+# pkg info htop
+# pkg info
+
+4.4.4. Installing and Removing Packages
+---------------------------------------
+# pkg install htop
+# pkg delete htop
+
+4.4.5. Upgrading Installed Packages
+-----------------------------------
+# pkg upgrade
+
+4.4.6. Auditing Installed Packages
+----------------------------------
+# pkg audit -F
+
+4.4.7. Automatically Removing Unused Packages
+---------------------------------------------
+go back to handbook!!
+
+4.4.8. Restoring the Package Database
+-------------------------------------
+# pkg backup -r /path/to/pkg.sql
+# pkg backup -d /path/to/pkg.sql
+
+4.4.10. Modifying Package Metadata
+----------------------------------
+Skipped!
+
+
+4.5. Using the Ports Collection
+===============================
+Skipped!
+
+
+4.6. Building Packages with Poudriere
+=====================================
+Skipped!
+
+4.7. Post-Installation Considerations
+=====================================
+Where can you find conf files...?
+
+
+4.8. Dealing with Broken Ports
+==============================
+<3
