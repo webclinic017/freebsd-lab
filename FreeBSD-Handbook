@@ -113,3 +113,47 @@ Where can you find conf files...?
 4.8. Dealing with Broken Ports
 ==============================
 <3
+
+
+Chapter 5. The X Window System
+==============================
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 6. Desktop Applications
+===============================
+This chapter not so match useful for "my". don't read it.
+
+~"Users who prefer to install a pre-built desktop version of FreeBSD rather than configuring one 
+from scratch should refer to GhostBSD, MidnightBSD or NomadBSD."
+
+6.2. Browsers
+==============
+1. lightweight browsers: www/dillo2, www/links, and www/w3m.
+2. heavy browsers: Firefox, etc...
+
+
+Chapter 9. Printing
+===================
+Skipped!
+
+
+Chapter 10. Linux® Binary Compatibility
+=======================================
+
+
+
+
+
+
+
+
