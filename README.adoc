@@ -9,7 +9,7 @@ For a quick and dirty build, install Asciidoctor however you like and build:
 make doc
 ....
 
-### freebsd install gnome
+### install gnome
 ....
 Google it!
 ....
@@ -62,21 +62,21 @@ make clean
 ### hello LKM
 How to use it:
 ....
-cd hello
-make
-kldload ./hello.ko
-kldunload ./hello.ko
+$cd hello
+$make
+$kldload ./hello.ko
+$kldunload ./hello.ko
 ....
 
 ### syscall LKM
 How to add your own custom syscall to FreeBSD then use it from userland
 ....
-cd syscall
-make
-kldload module/syscall.ko
-./test/call
-dmesg
-kldunload module/syscall.ko
+$cd syscall
+$make
+$kldload module/syscall.ko
+$./test/call
+$dmesg
+$kldunload module/syscall.ko
 ....
 
 ### cdev LKM
@@ -97,15 +97,15 @@ https://docs.freebsd.org/en/books/arch-handbook/driverbasics-char.html[[Referenc
 
 ### mkdir hook
 ....
-cd mkdir_hook/
-make
-mkdir anything
+$cd mkdir_hook/
+$make
+$mkdir anything
 ....
 
 ### keylogger
 ....
-cd keystroke_hook
-make
+$cd keystroke_hook
+$make
 $kldload ./read_hook.ko
 $dmesg
 ....
@@ -115,9 +115,10 @@ $dmesg
 
 ### SEE ALSO
 ....
-KLD(4), copyin(9), kldstat(8),
+KLD(4), copyin(9), kldstat(8), ktrace(1), kdum(1),
 All $man 9
 #include <sys/types.h>,
 #include <sys/systm.h>,
 #include <sys/conf.h>,
+#include <sys/protosw.h>,
 ....

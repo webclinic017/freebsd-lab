@@ -4,4 +4,7 @@ machine
 x86
 export_syms
 .depend.*
+.depend
+*.debug
 *.ko
+*.full
