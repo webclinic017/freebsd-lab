@@ -1,0 +1,80 @@
+*
+[log] I have read this doc at this day 31-3-2021
+
+
+*
+I was don't remember where is /something/ports ^^'
+so, I used that:
+$ tree -L 2 | grep ports
+$ cd /*/ports
+
+yah ^^' <3
+
+
+*
+FreeBSD is very compatible with standards such as POSIX® and
+ANSI C, as well with its own BSD heritage
+
+*
+I really like FreeBSD and how they document things <3
+
+
+*
+Programming Interpreters and compilers Ports:
+lang/
+
+Where is basic interpreters??
+$ cd lang/
+$ ls *basic
+
+That's it )) how fun ))
+
+
+*
+How to use X that's exists in /ports ??
+well, go there.. $make ,, $make install ,, that's it!!
+
+
+*
+Why you have to commitment to writing standard apps?
+
+Generally, you should try to make your code as portable as possible,
+as otherwise you may have to completely rewrite the program later to get it to
+work somewhere else-and who knows what you may be using in a few years time?
+
+   % cc -Wall -ansi -pedantic -o foobar foobar.c
+
+Without these flags, cc will allow you to use some of its non-standard
+extensions to the standard. Some of these are very useful, but will not work
+with other compilers-in fact, one of the main aims of the standard is to
+allow people to write code that will work with any compiler on any system.
+This is known as portable code.
+
+*
+core dump ??
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
