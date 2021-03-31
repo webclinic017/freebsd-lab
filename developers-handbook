@@ -50,13 +50,83 @@ with other compilers-in fact, one of the main aims of the standard is to
 allow people to write code that will work with any compiler on any system.
 This is known as portable code.
 
+
 *
 core dump ??
 
 
+*
+There are magic behind this line
+   .include <bsd.port.mk>
+Read:
+/usr/share/mk
+
+
+*
+Debugging
+
+The standard debugger supplied with FreeBSD 12.1 is called lldb (LLVM debugger)
+   https://lldb.llvm.org/
+
+The other debugger available with FreeBSD is called gdb (GNU debugger)
+
+Which one to use is largely a matter of taste. If familiar with one only, use that one.
+
+Remote Debugging Using LLDB
+
+
+*
+2.7. Using Emacs as a Development Environment
+Skipped!
+
+
+*
+<3
+2.8. Further Reading
+
+   -For information about setting up a development environment for
+   contributing fixes to FreeBSD itself, please see development(7). #IMPORTANT
+
+   -Brian Harvey and Matthew Wright Simply Scheme MIT 1994. ISBN 0-262-08226-8
+
+   -Randall Schwartz Learning Perl O’Reilly 1993 ISBN 1-56592-042-2
+
+   -Brian W. Kernighan and Rob Pike The Unix Programming Environment Prentice-Hall 1984 ISBN 0-13-937681-X
+
+   -Brian W. Kernighan and Dennis M. Ritchie The C Programming Language (2nd Edition) Prentice-Hall 1988 ISBN 0-13-110362-8
+
+   -W. Richard Stevens Advanced Programming in the Unix Environment Addison-Wesley 1992 ISBN 0-201-56317-7
+
+   -W. Richard Stevens Unix Network Programming Prentice-Hall 1990 ISBN 0-13-949876-1
 
 
 
+* Ch 3
+5 pages
+
+
+* Ch 4
+4 pages
+
+
+* Ch 5
+4 pages
+
+
+* Ch 6
+5 pages
+
+
+* Ch 7
+23 pages
+
+
+* Ch 8
+19 pages
+
+
+Part III: Kernel
+* Ch 9
 
 
 
