@@ -110,6 +110,61 @@ $kldload ./read_hook.ko
 $dmesg
 ....
 
+### Kernel Queue Data Structures
+All lists related macros here: `#include <sys/queue.h>`, see `queue(3)`
+....
+....
+
+### Synchronization Issues
+`<sys/lock.h>`, `<sys/mutex.h>`, see `mutex(9)`
+....
+....
+
+`<sys/sx.h>`, see `sx(9)`
+....
+....
+
+### proc Structure
+`<sys/proc.h>`
+
+### ps -aux Module
+Linux kernel modules act almost like $(ps aux) command.
+....
+....
+
+### CodeStyle
+FreeBSD codestyle: `style(9) and style.Makefile(5)
+
+### The FreeBSD regression testing tools
+`src/tools/regression`
+`src/tools/
+
+Google: `Micro Benchmark Checklist for FreeBSD`
+
+
+# Chapter 8. Configuring your FreeBSD custom Kernel - FreeBSD handbook
+* 1. This chapter contains all the steps in detail. Please don't abbreviate it.
+* 2. Don't make that in gnome, use ttys, Please -_- my laptop always sleep with gnome -_-
+
+Notes
+....
+`$make buildworld` before you tried building the kernel
+....
+
+
+
+# Chapter 9 from FreeBSD developers-handbook
+
+
+# Places
+* All Kernel modules exist in `/boot/kernel`
+* `$dmesg` content at boot-time === `/var/run/dmesg.boot`
+* Another tool for finding hardware is `pciconf(8)`, which provides more verbose output. `pciconf -lv`
+* FreeBSD source code `/usr/src/sys`, If this place not exist, Google: `get freebsd source code /usr/src/sys`, that's easy. sounds like git clone, but using svn.. I don't try to make this page a refernce .. so google it...
+* `/var/log/messages` records the kernel messages from every successful boot. While, dmesg(8) will print the kernel messages from the current boot.
+* `/boot/kernel/kernel.old` location of old kernel - last successful & bootable kernel :)
+
+
 
 
 
@@ -122,3 +177,8 @@ All $man 9
 #include <sys/conf.h>,
 #include <sys/protosw.h>,
 ....
+
+....
+FreeBSD doc: Committer's Guide
+....
+

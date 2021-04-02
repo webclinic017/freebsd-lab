@@ -1,5 +1,5 @@
 *
-[log] I have read this doc at this day 31-3-2021
+[log] I started reading this doc at this day 31-3-2021
 
 
 *
@@ -101,28 +101,67 @@ Skipped!
 
 
 
-* Ch 3
-5 pages
+*
+Ch 3
+Chapter 3. Secure Programming
+This chapter describes some of the security issues that have plagued UNIX®
+programmers for decades and some of the new tools available to help
+programmers avoid writing exploitable code.
+
+
+*
+Buffer Overflows attacks...
+SMA: I can't write 'brevity', you should back to this shiny part of the handbook.
+
+   > Aleph One. Phrack 49; "Smashing the Stack for Fun and Profit".
+   > ProPolice & StackGuard
+   > libsafe - libverify - libparanoia
+   >
+SMA: you have to re-read the whole this chapter again!
+
+
+
 
 
 * Ch 4
-4 pages
+SMA: unread!
 
 
 * Ch 5
-4 pages
+SMA: unread!
 
 
 * Ch 6
-5 pages
+Regression and Performance Testing
+   > unit
+   > Region
+   > Full
 
+   A. Micro Benchmark Checklist
+   B.
+
+
+
+
+
+
+
+Part II: Interprocess Communication
 
 * Ch 7
-23 pages
+Chapter 7. Sockets
+Skipped.
 
 
 * Ch 8
-19 pages
+Chapter 8. IPv6 Internals
+Skipped.
+
+
+
+
+
+
 
 
 Part III: Kernel

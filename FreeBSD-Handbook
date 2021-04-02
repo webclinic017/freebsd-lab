@@ -13,7 +13,7 @@ SMA: intro to Single User Mode...
 
 
 3.2.3. Changing Console Video Modes
-=================================== 
+===================================
 SMA: __practical_part_skipped__
 vidcontrol(1)
 
@@ -34,12 +34,12 @@ su(1), adduser(8), rmuser(8), chpass(1), passwd(1), pw(8)
 
 Chapter 4. Installing Applications: Packages and Ports
 ======================================================
-pkg(8), pkg-search(8), pkg.conf(5), 
+pkg(8), pkg-search(8), pkg.conf(5),
 
 FreeBSD ports mailing list: https://lists.freebsd.org/mailman/listinfo/freebsd-ports
 FreeBSD ports bugs mailing list: https://lists.freebsd.org/mailman/listinfo/freebsd-ports-bugs
 
-Before installing any application, check https://vuxml.freebsd.org/ for security issues related to the application or type pkg audit -F 
+Before installing any application, check https://vuxml.freebsd.org/ for security issues related to the application or type pkg audit -F
 to check all installed applications for known vulnerabilities.
 
 4.3. Finding Software
@@ -54,8 +54,8 @@ Where is the location of app htop in my system?
 
 4.4. Using pkg for Binary Package Management
 --------------------------------------------
-~"Since pkg only works with binary packages, it is not a replacement for such tools. 
-Those tools can be used to install software from both binary packages and the Ports Collection, 
+~"Since pkg only works with binary packages, it is not a replacement for such tools.
+Those tools can be used to install software from both binary packages and the Ports Collection,
 while pkg installs only binary packages."
 
 # man pkg-install
@@ -133,13 +133,18 @@ Chapter 6. Desktop Applications
 ===============================
 This chapter not so match useful for "my". don't read it.
 
-~"Users who prefer to install a pre-built desktop version of FreeBSD rather than configuring one 
+~"Users who prefer to install a pre-built desktop version of FreeBSD rather than configuring one
 from scratch should refer to GhostBSD, MidnightBSD or NomadBSD."
 
 6.2. Browsers
 ==============
 1. lightweight browsers: www/dillo2, www/links, and www/w3m.
 2. heavy browsers: Firefox, etc...
+
+
+Chapter 8. Building and Installing a Custom Kernel
+==================================================
+Done. %100
 
 
 Chapter 9. Printing
