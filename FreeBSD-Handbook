@@ -117,7 +117,14 @@ Where can you find conf files...?
 
 Chapter 5. The X Window System
 ==============================
-
+Xorg
+Terminology
+   > X server
+   > X client
+   > window manager
+   > desktop environment
+   > focus policy
+   > widgets
 
 
 
@@ -157,7 +164,32 @@ Chapter 10. Linux® Binary Compatibility
 
 
 
+Chapter 11. WINE
+================
+WINE, which stands for Wine Is Not an Emulator, is technically a software
+translation layer. It enables to install and run some software written
+for Windows® on FreeBSD (and other) systems.
 
+The WINE Project is NOT an emulator
+
+
+Chapter 12. Configuration and Tuning
+====================================
+RC.CONF(5)
+/etc/rc.conf
+/usr/local/etc/rc.d  daemon or startup scripts
+sysctl(8)
+rc(8)
+service(8)
+rc.subr(8)
+https://docs.freebsd.org/en/articles/rc-scripting/
+
+In FreeBSD, most included services are started through the system startup scripts.
+
+The entries in /etc/rc.conf override the default settings in
+/etc/defaults/rc.conf. The file containing the default settings
+should not be edited. Instead, all system-specific changes should be
+made to /etc/rc.conf
 
 
 

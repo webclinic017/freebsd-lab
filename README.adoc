@@ -1,5 +1,6 @@
 # Hello FreeBSD
 
+
 ### Build the documentation
 You don’t need to depend on GitHub.
 
@@ -9,10 +10,12 @@ For a quick and dirty build, install Asciidoctor however you like and build:
 make doc
 ....
 
+
 ### install gnome
 ....
 Google it!
 ....
+
 
 ### Move to bash shell
 ....
@@ -22,6 +25,7 @@ chsh -s /usr/local/bin/bash root
 echo $SHELL
 ....
 https://serverfault.com/a/228512[[link]]
+
 
 ### compile the kernel
 ....
@@ -49,6 +53,7 @@ make c
 .userland/hello
 ....
 
+
 ### Kernel command!
 `Google: freebsd kernel module hello world`
 ....
@@ -59,6 +64,7 @@ make unload
 make clean
 ....
 
+
 ### hello LKM
 How to use it:
 ....
@@ -67,6 +73,7 @@ $make
 $kldload ./hello.ko
 $kldunload ./hello.ko
 ....
+
 
 ### syscall LKM
 How to add your own custom syscall to FreeBSD then use it from userland
@@ -79,21 +86,26 @@ $dmesg
 $kldunload module/syscall.ko
 ....
 
+
 ### cdev LKM
 Simple char dev, Reference: `/usr/share/examples/kld/cdev`
+
 
 ### echo LKM
 Another simple char dev, because "cdev LKM" not working now, and this works smoothly.
 https://docs.freebsd.org/en/books/arch-handbook/driverbasics-char.html[[Reference]]
 
+
 ### Side note #1
 
 * `/usr/src/sys/` the best reference and learning tool for a newbie FreeBSD kernel hacker
+
 
 ### Side note #2: Debugging
 
 * The FreeBSD Developer’s Handbook, specifically Chapter 10
 * http://www.lemis.com/grog/Papers/Debug-tutorial/tutorial.pdf[[Debugging Kernel Problems by Greg Leh]]
+
 
 ### mkdir hook
 ....
@@ -101,6 +113,7 @@ $cd mkdir_hook/
 $make
 $mkdir anything
 ....
+
 
 ### keylogger
 ....
@@ -110,10 +123,12 @@ $kldload ./read_hook.ko
 $dmesg
 ....
 
+
 ### Kernel Queue Data Structures
 All lists related macros here: `#include <sys/queue.h>`, see `queue(3)`
 ....
 ....
+
 
 ### Synchronization Issues
 `<sys/lock.h>`, `<sys/mutex.h>`, see `mutex(9)`
@@ -124,16 +139,20 @@ All lists related macros here: `#include <sys/queue.h>`, see `queue(3)`
 ....
 ....
 
+
 ### proc Structure
 `<sys/proc.h>`
+
 
 ### ps -aux Module
 Linux kernel modules act almost like $(ps aux) command.
 ....
 ....
 
+
 ### CodeStyle
 FreeBSD codestyle: `style(9) and style.Makefile(5)
+
 
 ### The FreeBSD regression testing tools
 `src/tools/regression`
@@ -142,29 +161,30 @@ FreeBSD codestyle: `style(9) and style.Makefile(5)
 Google: `Micro Benchmark Checklist for FreeBSD`
 
 
-# Chapter 8. Configuring your FreeBSD custom Kernel - FreeBSD handbook
+### Chapter 8. Configuring your FreeBSD custom Kernel - FreeBSD handbook
 * 1. This chapter contains all the steps in detail. Please don't abbreviate it.
-* 2. Don't make that in gnome, use ttys, Please -_- my laptop always sleep with gnome -_-
+* 2. Don't make that in gnome, use ttys, Please -_- my laptop always sleep with gnome (I don't mean 'that',  sorry)  -_-
+* 3. Ch 9. Building and Installing a FreeBSD Kernel - developers-handbook is complementary.
 
-Notes
+
+### Chapter 10. Kernel Debugging - developers-handbook
 ....
-`$make buildworld` before you tried building the kernel
+
+
+
 ....
 
 
 
-# Chapter 9 from FreeBSD developers-handbook
 
-
-# Places
+### Places
 * All Kernel modules exist in `/boot/kernel`
 * `$dmesg` content at boot-time === `/var/run/dmesg.boot`
 * Another tool for finding hardware is `pciconf(8)`, which provides more verbose output. `pciconf -lv`
 * FreeBSD source code `/usr/src/sys`, If this place not exist, Google: `get freebsd source code /usr/src/sys`, that's easy. sounds like git clone, but using svn.. I don't try to make this page a refernce .. so google it...
 * `/var/log/messages` records the kernel messages from every successful boot. While, dmesg(8) will print the kernel messages from the current boot.
 * `/boot/kernel/kernel.old` location of old kernel - last successful & bootable kernel :)
-
-
+* `/etc` configuration files
 
 
 
